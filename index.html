@@ -46,14 +46,13 @@
                 canvas.height = img.height;
                 ctx.drawImage(img, 0, 0);
 
-                // 設定文字樣式 (配合您圖片的設計)
-                ctx.font = "bold 60px 'Microsoft JhengHei', Arial"; 
-                ctx.fillStyle = "#1a1a1a"; // 深色文字，配合白色背景
+                // 設定文字樣式
+                ctx.font = "bold 50px 'Microsoft JhengHei', Arial"; 
+                ctx.fillStyle = "#1a1a1a"; 
                 ctx.textAlign = "left";
 
-                // 【關鍵：微調位置】
-                // 根據您提供的圖，「我是」後面大約是 x=230, y=450 的位置
-                ctx.fillText(name, 230, 450); 
+                // 使用您指定的座標 (175.1, 289.1)
+                ctx.fillText(name, 175.1, 289.1); 
 
                 canvas.style.display = "block";
                 
